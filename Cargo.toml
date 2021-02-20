@@ -1,0 +1,16 @@
+[package]
+name = "json2prom"
+version = "0.1.0"
+authors = ["Aatif Syed <aatif.syed@metaswitch.com>"]
+edition = "2018"
+publish = ["metaswitch"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+error-chain = "0.12.4"
+json = "0.12.4"
+reqwest = "0.11.1"
+structopt = "0.3.21"
+tokio = { version = "1.2.0", features = ["macros", "rt-multi-thread",] }
+warp = "0.3.0"
